@@ -1,0 +1,132 @@
+{
+  "id": "7a02622b-363b-4278-92f4-465da0edf719",
+  "version": "2.0",
+  "name": "Project_1",
+  "url": "https://practicetestautomation.com",
+  "tests": [{
+    "id": "f5548374-34fe-4d58-a6e3-e2e3db8253dd",
+    "name": "Validate that upon successful login, 'Logged In Successfully' label is displayed",
+    "commands": [{
+      "id": "6cc5625c-638a-4cac-93ff-e0ed5a2dfead",
+      "comment": "",
+      "command": "open",
+      "target": "/practice-test-login/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f91ae0a6-1d52-4b59-988b-83d38a8a6ebe",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "952x993",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4c54dc97-83fd-4a21-9ab1-fa6bab945d06",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='form']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf054825-5ea7-4c0b-b7f3-78eedc2c4d52",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='form']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "student"
+    }, {
+      "id": "02cbbc39-54e5-446f-b986-2e62e89d1a07",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "efc6b95c-baee-4115-b866-7569c1b6bcda",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Password123"
+    }, {
+      "id": "cc6e6d8c-dbfe-427c-b4f6-18576bb7113f",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit",
+      "targets": [
+        ["id=submit", "id"],
+        ["css=#submit", "css:finder"],
+        ["xpath=//button[@id='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='form']/button", "xpath:idRelative"],
+        ["xpath=//section/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d895a4f-b280-4fb5-9727-902532a251a7",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.post-title",
+      "targets": [
+        ["css=.post-title", "css:finder"],
+        ["xpath=//div[@id='loop-container']/div/article/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Logged In Successfully')]", "xpath:innerText"]
+      ],
+      "value": "Logged In Successfully"
+    }, {
+      "id": "acd7a103-246a-4f3f-9910-756c41f95ec6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log out",
+      "targets": [
+        ["linkText=Log out", "linkText"],
+        ["css=.wp-block-button__link", "css:finder"],
+        ["xpath=//a[contains(text(),'Log out')]", "xpath:link"],
+        ["xpath=//div[@id='loop-container']/div/article/div[2]/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://practicetestautomation.com/practice-test-login/')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "9dc477a9-34f7-4538-bc8c-292f1fbe5de9",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["f5548374-34fe-4d58-a6e3-e2e3db8253dd"]
+  }],
+  "urls": ["https://practicetestautomation.com/"],
+  "plugins": []
+}
